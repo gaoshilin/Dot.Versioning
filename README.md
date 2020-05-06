@@ -1,4 +1,5 @@
 # Dot.Versioning
+QQ:375089259
 
 # 1. 安装：Install-Package Dot.Versioning
 
