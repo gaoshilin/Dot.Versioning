@@ -31,6 +31,12 @@ namespace Dot.Versioning.Sample
             _serviceFactory.GetService<IService>("1.0").Display();
             _serviceFactory.GetService<IService>("2.0").Display();
             _serviceFactory.GetService<IService>("9999.9999.9999.9999").Display();
+
+            _serviceFactory.GetService<IAlipayService>("alipay.trade.barcode.pay", "0.9").Display();
+            _serviceFactory.GetService<IAlipayService>("alipay.trade.barcode.pay", "1.0").Display();
+            _serviceFactory.GetService<IAlipayService>("alipay.trade.barcode.pay", "2.0").Display();
+            _serviceFactory.GetService<IAlipayService>("alipay.trade.barcode.pay", "9999.9999.9999.9999").Display();
+
             return Task.CompletedTask;
         }
 

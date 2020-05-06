@@ -34,7 +34,7 @@ namespace Dot.Versioning
                         var versionValue = GetVersionValue(versioningAttr.Version);
                         versions[versionValue] = implType;
 
-                        var name = $"{implType.Name}:{versionValue}";
+                        var name = $"{versioningAttr.Named ?? implType.Name}:{versionValue}";
                         services.AddNamed(name, implType, versioningAttr.ServiceLifetime);
                     }
                 }

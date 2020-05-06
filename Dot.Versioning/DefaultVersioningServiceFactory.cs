@@ -21,5 +21,13 @@ namespace Dot.Versioning
             var name = $"{serviceType.Name}:{versionValue}";
             return _serviceProvider.GetNamedService<T>(name);
         }
+
+        public T GetService<T>(string name, string version)
+            where T : IVersioningService
+        {
+            var (serviceType, versionValue) = _versioningTable.GetServiceType<T>(version);
+            name = $"{name}:{versionValue}";
+            return _serviceProvider.GetNamedService<T>(name);
+        }
     }
 }
