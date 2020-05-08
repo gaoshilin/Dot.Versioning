@@ -3,6 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/gaoshilin/Dot.Versioning</PackageProjectUrl>
+    <Authors>gaolin</Authors>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
